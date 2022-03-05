@@ -1,12 +1,12 @@
 const path = require('path');
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 require('dotenv').config();
+var PACKAGE = require('./package.json');
 
 module.exports = {
-  watch : true,
+  watch: true,
   devtool: 'source-map',
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: path.join(__dirname, "src", "master-files/default.js"),
 
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -26,14 +26,12 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html"),
-    }),
     new webpack.DefinePlugin({
       PRODUCTION: JSON.stringify(true),
+      VERSION: JSON.stringify(PACKAGE.version),
       BUILDTIME: JSON.stringify(new Date().getTime()),
-      APIURL: JSON.stringify( process.env.APIURL ),
-      ALLSITES: JSON.stringify(process.env.ALLSITES),
+      ENVIRONMENT: JSON.stringify(process.env.NODE_ENV)
+
     }),
   ],
 }
