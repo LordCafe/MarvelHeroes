@@ -1,0 +1,124 @@
+#root{
+  background-color: #333;
+}
+
+/* Navigation */
+nav{
+  background-color: #202020 ;
+}
+
+.invisible{
+  visibility: hidden;
+}
+
+nav .nav-wrapper div.row{
+  height: 100%;
+
+}
+
+nav .nav-wrapper div.row span {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+}
+.nav-wrapper div.row .col{
+    box-sizing: border-box;
+    border-right: 1px solid #393939;
+    height: 100%;
+    border-width: thin;
+}
+
+.nav-wrapper .user-space {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-wrapper .user-space .rol {
+    color: #E8B637;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+
+
+
+
+/* End navigation */
+.fix-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-image figure {
+  background: gray;
+  width: 300px;
+  height: 450px;
+  margin: auto;
+  background:url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.card .card-image img {
+  visibility: hidden;
+  height: 100%;
+}
+
+
+.card-image img.visibleImg {
+  opacity: 0;
+  visibility: visible;
+  animation: fadeIn 2s forwards;
+}
+
+
+.card .card-image .card-title{
+  width: 100%;
+  color:#ffff;
+  background: black;
+}
+
+.container-fix{
+  width: 100%;
+}
+
+.marvel-thumbnail .card {
+    width: 300px;
+    height: 450px;
+    margin: 10px 4px;
+}
+
+.card .card-image {
+    box-shadow: 2px 2px 2px 1px #1111;
+}
+
+.marvel-thumbnail figcaption {
+    display: block;
+    position: absolute;
+    color: #ffff;
+    z-index: 100;
+    top: 90%;
+    width: 100%;
+    height: auto;
+    background: black;
+    opacity: .8;
+}
+
+/* Marvel form  */
+
+.marvel-form{
+  background: white;
+}
+
+.marvel-form [type="submit"]{
+  margin : 30px 15px;
+}
+
+/* End Marvel form  */
+@media only screen and (max-width: 600px) {
+ .show-on-large{
+   display: none;
+ }
+
+}

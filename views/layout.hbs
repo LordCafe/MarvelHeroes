@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-      <!-- Compiled and minified JavaScript -->
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel='stylesheet' href='/stylesheets/root.css' />
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-      <link rel='stylesheet' href='/stylesheets/prism.css' />
-    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head>
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  </head>
-  <body>
-    {{!-- Begin Navegation --}}
-      <nav>
-        <div class="nav-wrapper">
-          <a href="/" class="brand-logo">Orion Template -</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <!-- Compiled and minified JavaScript -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel='stylesheet' href='/stylesheets/root.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/animation.css' />
+  <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet"
+    media="screen,projection">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata"
+    rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+    rel="stylesheet">
 
-          </ul>
+</head>
+
+<body>
+  {{!-- Begin Navegation --}}
+  <nav>
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col m1 tab show-on-large	"></div>
+        <div class="col m4 s8 tab">
+          <div class="user-space">
+            <span>Adrian</span>
+            <span class="rol">rol-user</span>
+          </div>
         </div>
-      </nav>
-    {{!-- End navegation --}}
+        <div class="col m2 tab show-on-large	"></div>
+        <div class="col m2 tab show-on-large	"></div>
+        <div class="col m2 tab show-on-large	"></div>
+        <div class="col m1  s4 tab">
+          <span class="material-icons">
+            search
+          </span>
 
-    {{{body}}}
+        </div>
+      </div>
+    </div>
+  </nav>
+  {{!-- End navegation --}}
 
-    <script src="/javascripts/react/main.js"></script>
-    <script src="/javascripts/master-helper.js"></script>
-    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script>
+  <div class="container-fix">
+      {{{ body  }}}
+  </div>
 
-    </script>
-  </body>
+  <script src="/javascripts/react/main.js"></script>
+  <script src="/javascripts/master-helper.js"></script>
+  <script async
+    src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+
+  </script>
+</body>
+
 </html>
