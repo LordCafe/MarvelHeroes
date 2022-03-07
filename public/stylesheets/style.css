@@ -1,4 +1,4 @@
-#root{
+#root, .container-component{
   background-color: #333;
 }
 
@@ -108,14 +108,42 @@ nav .nav-wrapper div.row span {
 /* Marvel form  */
 
 .marvel-form{
-  background: white;
+    box-sizing: border-box;
+    border-right: 1px solid #393939;
+    height: 100%;
+    border-width: thin;
 }
 
 .marvel-form [type="submit"]{
   margin : 30px 15px;
 }
 
+.marvel-button{
+  background: #EC1D24 !important;
+}
+
+.marvel-form .date {
+  background: white !important;
+  text-align: center;
+}
+
+.heroinput{
+  color:white;
+}
+
 /* End Marvel form  */
+
+
+/* Character page */
+
+.character-page{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* End Character page */
+
+
 @media only screen and (max-width: 600px) {
  .show-on-large{
    display: none;

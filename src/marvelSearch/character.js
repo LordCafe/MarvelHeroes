@@ -7,7 +7,7 @@ function Onload(event) {
 }
 
 
-function ChooseImage(thumbnail ){
+function ChooseImage(thumbnail) {
   let newImage = "https://grainy-gradients.vercel.app/noise.svg";
   try {
 
@@ -20,8 +20,8 @@ function ChooseImage(thumbnail ){
   return newImage;
 }
 
-function Example({ title, id, thumbnail }) {
-  let newImage = ChooseImage( thumbnail );
+function Character({ title, id, thumbnail, name  }) {
+  let newImage = ChooseImage(thumbnail);
   const [count, setCount] = useState(0);
 
   return (
@@ -29,12 +29,19 @@ function Example({ title, id, thumbnail }) {
       <div class="card">
         <div class="card-image">
           <figure>
-            <img
+            <a href={"/character/"+id} >
+                          <img
+              class="tooltipped"
+              data-position="right"
+              data-tooltip={ name }
               src={newImage}
               alt="Trulli"
               onLoad={Onload}
             />
-          <figcaption>{title}</figcaption>
+
+            </a>
+
+            <figcaption>{title}</figcaption>
           </figure>
         </div>
       </div>
@@ -43,4 +50,6 @@ function Example({ title, id, thumbnail }) {
   );
 }
 
-export default Example;
+export default Character;
+
+
